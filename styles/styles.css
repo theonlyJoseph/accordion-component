@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+*,
+::after,
+::before,
+li,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font: normal 700 1.6rem "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.faq-background {
+  width: 100%;
+  position: relative;
+}
+.faq-background img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  position: absolute;
+  max-width: 53rem;
+  width: 100%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.card .card__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card .card__header .card__title {
+  margin-left: 2rem;
+  font-size: 3rem;
+  font: normal 700 3rem "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+}
+.card .card__header #star-icon {
+  height: 2em;
+  width: 2em;
+  position: relative;
+  top: 0.125em;
+}
+
+.card__content {
+  padding: 1rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+.card__content .card__question {
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: normal 600 1.4rem "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.card__content .card__question:hover {
+  color: #a843b8;
+}
+
+.card__question.open {
+  min-height: 35px;
+}
+
+.card__answer {
+  height: 0;
+  text-align: left;
+  font-size: 1.6rem;
+  color: hsl(292, 16%, 49%);
+  font: normal 400 1.2rem "Work Sans", sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.card__answer.open {
+  padding: 1rem 0;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.attribution .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
