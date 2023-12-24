@@ -1,15 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 *,
-::after,
-::before,
-li,
-ul,
-a {
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  border: 0;
+}
+
+button {
+  font: unset;
+  outline: none;
+  padding: 1.5rem 0;
+  margin: 0;
+  background-color: inherit;
+  border: 0;
+  white-space: normal;
+  text-align: left;
 }
 
 html {
@@ -18,7 +27,6 @@ html {
 
 body {
   min-height: 100vh;
-  font: normal 700 1.6rem "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
 }
 
@@ -33,7 +41,7 @@ body {
 
 .card {
   position: absolute;
-  max-width: 53rem;
+  max-width: 54rem;
   width: 100%;
   top: 15%;
   left: 50%;
@@ -47,41 +55,39 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
   margin-bottom: 1rem;
 }
 .card .card__header .card__title {
   margin-left: 2rem;
-  font-size: 3rem;
   font: normal 700 3rem "Work Sans", sans-serif;
+  font-size: 3rem;
   color: hsl(292, 42%, 14%);
 }
 .card .card__header #star-icon {
-  height: 2em;
-  width: 2em;
+  width: 3rem;
   position: relative;
   top: 0.125em;
 }
 
-.card__content {
+.card__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 5rem;
+  font: normal 600 1.4rem "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
   padding: 1rem 0;
   overflow: hidden;
   border-bottom: 1px solid hsl(275, 100%, 97%);
 }
-.card__content .card__question {
-  min-height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font: normal 600 1.4rem "Work Sans", sans-serif;
-  color: hsl(292, 42%, 14%);
-  transition: all 0.2s linear;
+.card__question button:hover {
+  color: #a843b8;
   cursor: pointer;
 }
-.card__content .card__question:hover {
-  color: #a843b8;
-}
 
-.card__question.open {
+.card__question {
   min-height: 35px;
 }
 
@@ -94,9 +100,12 @@ body {
   line-height: 1.5;
   overflow: hidden;
   transition: all 0.3s linear;
+  text-align: left;
 }
 
-.card__answer.open {
+.card__answer:not([aria-hidden=true]) {
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 1rem 0;
 }
 

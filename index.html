@@ -33,69 +33,129 @@
     </div>
     <div class="card">
       <header class="card__header">
-        <span class="card__star-icon">
           <img
             id="star-icon"
             src="./assets/images/icon-star.svg"
             alt="Star icon"
           />
-        </span>
         <h1 class="card__title">FAQs</h1>
       </header>
       <div class="card__content">
-        <header class="card__question">
-          <h3>What is Frontend Mentor, and how will it help me?</h3>
-          <span class="card__icons">
-            <img id="reveal-icon" src="./assets/images/icon-plus.svg" alt="" />
-          </span>
-        </header>
-        <p class="card__answer">
-          Frontend Mentor offers realistic coding challenges to help developers
-          improve their frontend coding skills with projects in HTML, CSS, and
-          JavaScript. It's suitable for all levels and ideal for portfolio
-          building.
-        </p>
-      </div>
-      <div class="card__content">
-        <header class="card__question">
-          <h3>Is Frontend Mentor free?</h3>
-          <span class="card__icons">
-            <img id="reveal-icon" src="./assets/images/icon-plus.svg" alt="" />
-          </span>
-        </header>
-        <p class="card__answer">
-          Yes, Frontend Mentor offers both free and premium coding challenges,
-          with the free option providing access to a range of projects suitable
-          for all skill levels.
-        </p>
-      </div>
-      <div class="card__content">
-        <header class="card__question">
-          <h3>Can I use Frontend Mentor projects in my portfolio?</h3>
-          <span class="card__icons">
-            <img id="reveal-icon" src="./assets/images/icon-plus.svg" alt="" />
-          </span>
-        </header>
-        <p class="card__answer">
-          Yes, you can use projects completed on Frontend Mentor in your
-          portfolio. It's an excellent way to showcase your skills to potential
-          employers!
-        </p>
-      </div>
-      <div class="card__content">
-        <header class="card__question">
-          <h3>
+        <div class="card__question">
+          <button
+            type="button
+            id="accordion-header-1"
+            aria-controls="accordion-panel-1"
+            aria-expanded="false"
+            data-accordion-header
+          >
+            What is Frontend Mentor, and how will it help me?
+          </button>
+          <img id="reveal-icon" src="./assets/images/icon-plus.svg" aria-hidden="true"/>
+        </div>
+        <section
+          class="card__answer"
+          id="accordion-panel-1"
+          aria-labelledby="accordion-header-1"
+          hidden
+        >
+          <p>
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </section>
+
+        <div class="card__question">
+          <button
+            type="button"
+            id="accordion-header-2"
+            aria-controls="accordion-panel-2"
+            aria-expanded="false"
+            data-accordion-header
+          >
+            Is Frontend Mentor free?
+          </button>
+          <img
+            id="reveal-icon"
+            src="./assets/images/icon-plus.svg"
+            aria-hidden="true"
+          />
+        </div>
+        <section
+          class="card__answer"
+          id="accordion-panel-2"
+          aria-labelledby="accordion-header-2"
+          hidden
+        >
+          <p>
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </section>
+
+        <div class="card__question">
+          <button
+            type="button"
+            id="accordion-header-3"
+            aria-controls="accordion-panel-3"
+            aria-expanded="false"
+            data-accordion-header
+          >
+            Can I use Frontend Mentor projects in my portfolio?
+          </button>
+          <img
+            id="reveal-icon"
+            aria-hidden="true"
+            src="./assets/images/icon-plus.svg"
+            alt=""
+          />
+        </div>
+        <section
+          class="card__answer"
+          id="accordion-panel-3"
+          aria-labelledby="accordion-header-3"
+          hidden
+        >
+          <p>
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </section>
+
+        <div class="card__question">
+          <button
+            type="button"
+            id="accordion-header-4"
+            aria-controls="accordion-panel-4"
+            aria-expanded="false"
+            data-accordion-header
+          >
             How can I get help if I'm stuck on a Frontend Mentor challenge?
-          </h3>
-          <span class="card__icons">
-            <img id="reveal-icon" src="./assets/images/icon-plus.svg" alt="" />
-          </span>
-        </header>
-        <p class="card__answer">
-          The best place to get help is inside Frontend Mentor's Discord
-          community. There's a help channel where you can ask questions and seek
-          support from other community members.
-        </p>
+          </button>
+          <img
+            id="reveal-icon"
+            aria-hidden="true"
+            src="./assets/images/icon-plus.svg"
+            alt=""
+          />
+        </div>
+
+        <section
+          class="card__answer"
+          id="accordion-panel-4"
+          aria-labelledby="accordion-header-4"
+          hidden
+        >
+          <p>
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </section>
       </div>
       <div class="attribution">
         Challenge by
