@@ -2,6 +2,7 @@ const header = document.querySelectorAll("[data-accordion-header]");
 
 header.forEach((item) => {
   let answer = item.parentElement.nextElementSibling;
+  console.log(answer);
   item.addEventListener("click", (e) => {
     let expanded = item.getAttribute("aria-expanded") === "true" || false;
     let icon = item.parentElement.querySelector("#reveal-icon");

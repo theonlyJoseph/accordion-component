@@ -11,9 +11,8 @@
 }
 
 button {
-  font: unset;
+  width: 100%;
   outline: none;
-  padding: 1.5rem 0;
   margin: 0;
   background-color: inherit;
   border: 0;
@@ -69,6 +68,13 @@ body {
   position: relative;
   top: 0.125em;
 }
+.card .card__content {
+  padding: 1rem;
+}
+.card .question__wraper {
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
 
 .card__question {
   display: flex;
@@ -76,19 +82,14 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   min-height: 5rem;
-  font: normal 600 1.4rem "Work Sans", sans-serif;
+  font: normal 600 1.6rem "Work Sans", sans-serif;
   color: hsl(292, 42%, 14%);
   padding: 1rem 0;
   overflow: hidden;
-  border-bottom: 1px solid hsl(275, 100%, 97%);
 }
 .card__question button:hover {
   color: #a843b8;
   cursor: pointer;
-}
-
-.card__question {
-  min-height: 35px;
 }
 
 .card__answer {
@@ -96,17 +97,18 @@ body {
   text-align: left;
   font-size: 1.6rem;
   color: hsl(292, 16%, 49%);
-  font: normal 400 1.2rem "Work Sans", sans-serif;
+  font: normal 400 1.4rem "Work Sans", sans-serif;
   line-height: 1.5;
   overflow: hidden;
-  transition: all 0.3s linear;
   text-align: left;
+  transition: all 0.3s linear;
 }
 
 .card__answer:not([aria-hidden=true]) {
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem 0;
+  transition: all 0.3s linear;
 }
 
 .attribution {

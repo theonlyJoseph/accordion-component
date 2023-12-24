@@ -16,9 +16,8 @@
 }
 
 button {
-  font: unset;
+  width: 100%;
   outline: none;
-  padding: 1.5rem 0;
   margin: 0;
   background-color: inherit;
   border: 0;
@@ -73,27 +72,30 @@ body {
       top: 0.125em;
     }
   }
+
+  .card__content {
+    padding: 1rem;
+  }
+
+  .question__wraper {
+    padding: 1rem 0;
+    border-bottom: 1px solid $lightPink;
+  }
 }
 
 .card__question {
   @include flexCenter(space-between);
 
   min-height: 5rem;
-
   font: $font-title-normal;
   color: $darkPurple;
   padding: 1rem 0;
   overflow: hidden;
-  border-bottom: 1px solid $lightPink;
 
   button:hover {
     color: $pink;
     cursor: pointer;
   }
-}
-
-.card__question {
-  min-height: 35px;
 }
 
 .card__answer {
@@ -104,13 +106,14 @@ body {
   font: $font-normal;
   line-height: 1.5;
   overflow: hidden;
-  transition: all 0.3s linear;
   text-align: left;
+  transition: all 0.3s linear;
 }
 
 .card__answer:not([aria-hidden="true"]) {
   height: fit-content;
   padding: 1rem 0;
+  transition: all 0.3s linear;
 }
 
 .attribution {

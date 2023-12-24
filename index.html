@@ -33,25 +33,30 @@
     </div>
     <div class="card">
       <header class="card__header">
-          <img
-            id="star-icon"
-            src="./assets/images/icon-star.svg"
-            alt="Star icon"
-          />
+        <img
+          id="star-icon"
+          src="./assets/images/icon-star.svg"
+          alt="Star icon"
+        />
         <h1 class="card__title">FAQs</h1>
       </header>
       <div class="card__content">
-        <div class="card__question">
+        <div class="question__wraper">
           <button
-            type="button
+            type="button"
             id="accordion-header-1"
+            class="card__question"
             aria-controls="accordion-panel-1"
             aria-expanded="false"
             data-accordion-header
           >
             What is Frontend Mentor, and how will it help me?
+            <img
+              id="reveal-icon"
+              src="./assets/images/icon-plus.svg"
+              aria-hidden="true"
+            />
           </button>
-          <img id="reveal-icon" src="./assets/images/icon-plus.svg" aria-hidden="true"/>
         </div>
         <section
           class="card__answer"
@@ -66,22 +71,22 @@
             for portfolio building.
           </p>
         </section>
-
-        <div class="card__question">
+        <div class="question__wraper">
           <button
             type="button"
+            class="card__question"
             id="accordion-header-2"
             aria-controls="accordion-panel-2"
             aria-expanded="false"
             data-accordion-header
           >
             Is Frontend Mentor free?
+            <img
+              id="reveal-icon"
+              src="./assets/images/icon-plus.svg"
+              aria-hidden="true"
+            />
           </button>
-          <img
-            id="reveal-icon"
-            src="./assets/images/icon-plus.svg"
-            aria-hidden="true"
-          />
         </div>
         <section
           class="card__answer"
@@ -95,23 +100,23 @@
             suitable for all skill levels.
           </p>
         </section>
-
-        <div class="card__question">
+        <div class="question__wraper">
           <button
             type="button"
+            class="card__question"
             id="accordion-header-3"
             aria-controls="accordion-panel-3"
             aria-expanded="false"
             data-accordion-header
           >
             Can I use Frontend Mentor projects in my portfolio?
+            <img
+              id="reveal-icon"
+              aria-hidden="true"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+            />
           </button>
-          <img
-            id="reveal-icon"
-            aria-hidden="true"
-            src="./assets/images/icon-plus.svg"
-            alt=""
-          />
         </div>
         <section
           class="card__answer"
@@ -125,23 +130,23 @@
             potential employers!
           </p>
         </section>
-
-        <div class="card__question">
+        <div class="question__wraper">
           <button
             type="button"
+            class="card__question"
             id="accordion-header-4"
             aria-controls="accordion-panel-4"
             aria-expanded="false"
             data-accordion-header
           >
             How can I get help if I'm stuck on a Frontend Mentor challenge?
+            <img
+              id="reveal-icon"
+              aria-hidden="true"
+              src="./assets/images/icon-plus.svg"
+              alt=""
+            />
           </button>
-          <img
-            id="reveal-icon"
-            aria-hidden="true"
-            src="./assets/images/icon-plus.svg"
-            alt=""
-          />
         </div>
 
         <section
